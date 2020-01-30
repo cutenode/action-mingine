@@ -1,0 +1,13 @@
+name: 'Mingine'
+description: 'Report'
+inputs:
+  path:  # id of input
+    description: 'path to run mingine against'
+    required: true
+    default: './'
+outputs:
+  node: # id of output
+    description: 'Minimum Node.js engine'
+runs:
+  using: 'node12'
+  main: 'index.js'
