@@ -2,12 +2,12 @@ name: 'Mingine'
 description: 'Report'
 inputs:
   path:  # id of input
-    description: 'path to run mingine against'
+    description: 'The path to check for `node_modules`.'
     required: true
     default: './'
 outputs:
   node: # id of output
-    description: 'Minimum Node.js engine'
+    description: 'The minimum usable version of Node.js as defined by your dependencies.'
 runs:
   using: 'node12'
   main: 'index.js'
