@@ -9,14 +9,14 @@ async function action () {
     const engines = await mingine(path)
     const package = await readpkg(path)
 
-    const localNode = package.engines.version
+    const localNode = package.engines.node
 
     
     const packagesNode = engines.node ? engines.node.minimum : undefined
     
     console.log(localNode, packagesNode)
     // console.log(semver.lte(packagesNode, localNode))
-    core.setOutput('node', node)
+    core.setOutput('node', packagesNode)
   } catch (error) {
     core.setFailed(error.message)
   }
