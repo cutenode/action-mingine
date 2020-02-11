@@ -9,7 +9,7 @@ async function action () {
     const engines = await mingine(path)
     const package = await readpkg(path)
 
-    const localNode = pacakge.engines.version
+    const localNode = package.engines.version
 
     
     const packagesNode = engines.node ? engines.node.minimum : undefined
