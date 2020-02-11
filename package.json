@@ -12,8 +12,9 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.2",
-    "@actions/github": "^2.1.0",
-    "mingine": "^1.0.2"
+    "mingine": "^1.0.2",
+    "read-pkg": "^5.2.0",
+    "semver": "^7.1.2"
   },
   "devDependencies": {
     "standard": "^14.3.1"
