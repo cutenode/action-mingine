@@ -1,6 +1,6 @@
 const core = require('@actions/core')
 const github = require('@actions/github')
-const mingine = reqire('mingine')
+const mingine = require('mingine')
 
 async function action () {
   try {
