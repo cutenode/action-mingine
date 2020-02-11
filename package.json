@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prune": "rm -rf node_modules && npm i --production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +14,8 @@
     "@actions/core": "^1.2.2",
     "@actions/github": "^2.1.0",
     "mingine": "^1.0.2"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
   }
 }
