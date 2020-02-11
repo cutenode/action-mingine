@@ -14,7 +14,8 @@ async function action () {
     
     const packagesNode = engines.node ? engines.node.minimum : undefined
     
-    console.log(semver.lte(packagesNode, localNode))
+    console.log(localNode, packagesNode)
+    // console.log(semver.lte(packagesNode, localNode))
     core.setOutput('node', node)
   } catch (error) {
     core.setFailed(error.message)
